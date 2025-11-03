@@ -1,0 +1,504 @@
+{
+  "vulnerabilities": [
+    {
+      "VulnerabilityID": "GHSA-4r6h-8v6p-xvw6",
+      "PkgID": "bfdf16ca1f97983f",
+      "PkgName": "xlsx",
+      "severity": "High",
+      "description": "Prototype Pollution in sheetJS",
+      "fix_versions": [
+        "0.19.3"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-hgqx-r2hp-jr38",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE XSS vulnerability in notificationManager.open API",
+      "fix_versions": [
+        "6.7.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-v626-r774-j7f8",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE vulnerable to mutation Cross-site Scripting via special characters in unescaped text nodes",
+      "fix_versions": [
+        "6.7.3"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-pq67-2wwv-3xjx",
+      "PkgID": "1041f38d95a8da2b",
+      "PkgName": "tar-fs",
+      "severity": "High",
+      "description": "tar-fs Vulnerable to Link Following and Path Traversal via Extracting a Crafted tar File",
+      "fix_versions": [
+        "2.1.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-v65r-p3vv-jjfv",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE mXSS vulnerability in undo/redo, getContent API, resetContent API, and Autosave plugin",
+      "fix_versions": [
+        "6.7.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-qwcr-r2fm-qrc7",
+      "PkgID": "45d77d211aa880b0",
+      "PkgName": "body-parser",
+      "severity": "High",
+      "description": "body-parser vulnerable to denial of service when url encoding is enabled",
+      "fix_versions": [
+        "1.20.3"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-3h5v-q93c-6h6q",
+      "PkgID": "f4926888358d9c6c",
+      "PkgName": "ws",
+      "severity": "High",
+      "description": "ws affected by a DoS when handling a request with many HTTP headers",
+      "fix_versions": [
+        "8.17.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-952p-6rrq-rcjv",
+      "PkgID": "7e39846e5a73421b",
+      "PkgName": "micromatch",
+      "severity": "Medium",
+      "description": "Regular Expression Denial of Service (ReDoS) in micromatch",
+      "fix_versions": [
+        "4.0.8"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-5359-pvf2-pw78",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE Cross-Site Scripting (XSS) vulnerability in handling external SVG files through Object or Embed elements",
+      "fix_versions": [
+        "6.7.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-3xgq-45jj-v275",
+      "PkgID": "9b5bfcfb6f23b7c9",
+      "PkgName": "cross-spawn",
+      "severity": "High",
+      "description": "Regular Expression Denial of Service (ReDoS) in cross-spawn",
+      "fix_versions": [
+        "7.0.5"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-c7qv-q95q-8v27",
+      "PkgID": "0a1f1faf04f0e220",
+      "PkgName": "http-proxy-middleware",
+      "severity": "High",
+      "description": "Denial of service in http-proxy-middleware",
+      "fix_versions": [
+        "2.0.7"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-9wv6-86v2-598j",
+      "PkgID": "824e151566399840",
+      "PkgName": "path-to-regexp",
+      "severity": "High",
+      "description": "path-to-regexp outputs backtracking regular expressions",
+      "fix_versions": [
+        "0.1.10"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-wf5p-g6vw-rhxx",
+      "PkgID": "4d0bce9fa550479f",
+      "PkgName": "axios",
+      "severity": "Medium",
+      "description": "Axios Cross-Site Request Forgery Vulnerability",
+      "fix_versions": [
+        "0.28.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-7fh5-64p2-3v2j",
+      "PkgID": "63c5a03362f85bef",
+      "PkgName": "postcss",
+      "severity": "Medium",
+      "description": "PostCSS line return parsing error",
+      "fix_versions": [
+        "8.4.31"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jr5f-v2jv-69x6",
+      "PkgID": "4d0bce9fa550479f",
+      "PkgName": "axios",
+      "severity": "High",
+      "description": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "fix_versions": [
+        "0.30.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-5pgg-2g8v-p4x9",
+      "PkgID": "bfdf16ca1f97983f",
+      "PkgName": "xlsx",
+      "severity": "High",
+      "description": "SheetJS Regular Expression Denial of Service (ReDoS)",
+      "fix_versions": [
+        "0.20.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-rv95-896h-c2vc",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Medium",
+      "description": "Express.js Open Redirect in malformed URLs",
+      "fix_versions": [
+        "4.19.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-438c-3975-5x3f",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE Cross-Site Scripting (XSS) vulnerability in handling iframes",
+      "fix_versions": [
+        "6.8.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jchw-25xp-jwwc",
+      "PkgID": "610af67baadeddc0",
+      "PkgName": "follow-redirects",
+      "severity": "Medium",
+      "description": "Follow Redirects improperly handles URLs in the url.parse() function",
+      "fix_versions": [
+        "1.15.4"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-w9jx-4g6g-rp7x",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE Cross-Site Scripting (XSS) vulnerability using noscript elements",
+      "fix_versions": [
+        "6.8.4"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-pxg6-pf52-xh8x",
+      "PkgID": "814c2abd7c60f95f",
+      "PkgName": "cookie",
+      "severity": "Low",
+      "description": "cookie accepts cookie name, path, and domain with out of bounds characters",
+      "fix_versions": [
+        "0.7.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-v65r-p3vv-jjfv",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE mXSS vulnerability in undo/redo, getContent API, resetContent API, and Autosave plugin",
+      "fix_versions": [
+        "6.7.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-438c-3975-5x3f",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE Cross-Site Scripting (XSS) vulnerability in handling iframes",
+      "fix_versions": [
+        "6.8.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jr5f-v2jv-69x6",
+      "PkgID": "4d0bce9fa550479f",
+      "PkgName": "axios",
+      "severity": "High",
+      "description": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "fix_versions": [
+        "0.30.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-qw6h-vgh9-j6wx",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Low",
+      "description": "express vulnerable to XSS via response.redirect()",
+      "fix_versions": [
+        "4.20.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-c7qv-q95q-8v27",
+      "PkgID": "0a1f1faf04f0e220",
+      "PkgName": "http-proxy-middleware",
+      "severity": "High",
+      "description": "Denial of service in http-proxy-middleware",
+      "fix_versions": [
+        "2.0.7"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-v65r-p3vv-jjfv",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE mXSS vulnerability in undo/redo, getContent API, resetContent API, and Autosave plugin",
+      "fix_versions": [
+        "6.7.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-gcx4-mw62-g8wm",
+      "PkgID": "cd34d7072a51ebf0",
+      "PkgName": "rollup",
+      "severity": "High",
+      "description": "DOM Clobbering Gadget found in rollup bundled scripts that leads to XSS",
+      "fix_versions": [
+        "2.79.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-rv95-896h-c2vc",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Medium",
+      "description": "Express.js Open Redirect in malformed URLs",
+      "fix_versions": [
+        "4.19.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-cm22-4g7w-348p",
+      "PkgID": "cb196c9e9d5fcf9d",
+      "PkgName": "serve-static",
+      "severity": "Low",
+      "description": "serve-static vulnerable to template injection that can lead to XSS",
+      "fix_versions": [
+        "1.16.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-4vvj-4cpr-p986",
+      "PkgID": "2ca403084e666b2e",
+      "PkgName": "webpack",
+      "severity": "Medium",
+      "description": "Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS",
+      "fix_versions": [
+        "5.94.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-mwcw-c2x4-8c55",
+      "PkgID": "b8baebee1f0ca95f",
+      "PkgName": "nanoid",
+      "severity": "Medium",
+      "description": "Predictable results in nanoid generation when given non-integer values",
+      "fix_versions": [
+        "3.3.8"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-9gqv-wp59-fq42",
+      "PkgID": "0a1f1faf04f0e220",
+      "PkgName": "http-proxy-middleware",
+      "severity": "Medium",
+      "description": "http-proxy-middleware allows fixRequestBody to proceed even if bodyParser has failed",
+      "fix_versions": [
+        "2.0.9"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-m6fv-jmcg-4jfg",
+      "PkgID": "c291a7e9656ffef0",
+      "PkgName": "send",
+      "severity": "Low",
+      "description": "send vulnerable to template injection that can lead to XSS",
+      "fix_versions": [
+        "0.19.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-5pgg-2g8v-p4x9",
+      "PkgID": "bfdf16ca1f97983f",
+      "PkgName": "xlsx",
+      "severity": "High",
+      "description": "SheetJS Regular Expression Denial of Service (ReDoS)",
+      "fix_versions": [
+        "0.20.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-968p-4wvh-cqc8",
+      "PkgID": "be03f532fa23d22c",
+      "PkgName": "@babel/helpers",
+      "severity": "Medium",
+      "description": "Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups",
+      "fix_versions": [
+        "7.26.10"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-c7qv-q95q-8v27",
+      "PkgID": "0a1f1faf04f0e220",
+      "PkgName": "http-proxy-middleware",
+      "severity": "High",
+      "description": "Denial of service in http-proxy-middleware",
+      "fix_versions": [
+        "2.0.7"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-9gqv-wp59-fq42",
+      "PkgID": "0a1f1faf04f0e220",
+      "PkgName": "http-proxy-middleware",
+      "severity": "Medium",
+      "description": "http-proxy-middleware allows fixRequestBody to proceed even if bodyParser has failed",
+      "fix_versions": [
+        "2.0.9"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-5pgg-2g8v-p4x9",
+      "PkgID": "bfdf16ca1f97983f",
+      "PkgName": "xlsx",
+      "severity": "High",
+      "description": "SheetJS Regular Expression Denial of Service (ReDoS)",
+      "fix_versions": [
+        "0.20.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jr5f-v2jv-69x6",
+      "PkgID": "4d0bce9fa550479f",
+      "PkgName": "axios",
+      "severity": "High",
+      "description": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "fix_versions": [
+        "0.30.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-rv95-896h-c2vc",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Medium",
+      "description": "Express.js Open Redirect in malformed URLs",
+      "fix_versions": [
+        "4.19.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-438c-3975-5x3f",
+      "PkgID": "7ce4fbca56811c54",
+      "PkgName": "tinymce",
+      "severity": "Medium",
+      "description": "TinyMCE Cross-Site Scripting (XSS) vulnerability in handling iframes",
+      "fix_versions": [
+        "6.8.1"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jchw-25xp-jwwc",
+      "PkgID": "610af67baadeddc0",
+      "PkgName": "follow-redirects",
+      "severity": "Medium",
+      "description": "Follow Redirects improperly handles URLs in the url.parse() function",
+      "fix_versions": [
+        "1.15.4"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-pxg6-pf52-xh8x",
+      "PkgID": "814c2abd7c60f95f",
+      "PkgName": "cookie",
+      "severity": "Low",
+      "description": "cookie accepts cookie name, path, and domain with out of bounds characters",
+      "fix_versions": [
+        "0.7.0"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-968p-4wvh-cqc8",
+      "PkgID": "be03f532fa23d22c",
+      "PkgName": "@babel/helpers",
+      "severity": "Medium",
+      "description": "Babel has inefficient RegExp complexity in generated code with .replace when transpiling named capturing groups",
+      "fix_versions": [
+        "7.26.10"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-rv95-896h-c2vc",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Medium",
+      "description": "Express.js Open Redirect in malformed URLs",
+      "fix_versions": [
+        "4.19.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-mwcw-c2x4-8c55",
+      "PkgID": "b8baebee1f0ca95f",
+      "PkgName": "nanoid",
+      "severity": "Medium",
+      "description": "Predictable results in nanoid generation when given non-integer values",
+      "fix_versions": [
+        "3.3.8"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-9wv6-86v2-598j",
+      "PkgID": "824e151566399840",
+      "PkgName": "path-to-regexp",
+      "severity": "High",
+      "description": "path-to-regexp outputs backtracking regular expressions",
+      "fix_versions": [
+        "0.1.10"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-rv95-896h-c2vc",
+      "PkgID": "1fd5a229b22ca7f0",
+      "PkgName": "express",
+      "severity": "Medium",
+      "description": "Express.js Open Redirect in malformed URLs",
+      "fix_versions": [
+        "4.19.2"
+      ]
+    },
+    {
+      "VulnerabilityID": "GHSA-jchw-25xp-jwwc",
+      "PkgID": "610af67baadeddc0",
+      "PkgName": "follow-redirects",
+      "severity": "Medium",
+      "description": "Follow Redirects improperly handles URLs in the url.parse() function",
+      "fix_versions": [
+        "1.15.4"
+      ]
+    }
+  ]
+}

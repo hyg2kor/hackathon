@@ -1,0 +1,299 @@
+[
+  {
+    "cve_id": "CVE-2025-27789_GHSA-968p-4wvh-cqc8",
+    "exploitability": "Low",
+    "impact": "Medium",
+    "reachability": "Internal Only",
+    "business_relevance": "Medium",
+    "priority": "Low",
+    "justification": "The vulnerability involves specific conditions that are not commonly met in typical application development, reducing its exploitability to 'Low.' The impact is rated as 'Medium' because the performance degradation can affect the application but does not lead to direct data compromise or denial of service under typical usage scenarios. The issue affects Babel, which is primarily used internally during the build process and is unlikely to expose the vulnerability directly to users, hence the reachability is 'Internal Only.' Business relevance is 'Medium' as Babel is widely used in web development environments, but the severity of the vulnerability, combined with the low EPSS score and absence of asset exposure, allows for a 'Low' priority for mitigation. It's crucial to update Babel dependencies and recompile code to completely resolve the issue, although not immediately critical due to the conditions required for exploitation."
+  },
+  {
+    "cve_id": "CVE-2025-27152_GHSA-jchw-25xp-jwwc_GHSA-jr5f-v2jv-69x6",
+    "exploitability": "Medium",
+    "impact": "High",
+    "reachability": "Likely Exposed to Users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability affects axios, which is a widely used HTTP client in both browser and node.js environments, suggesting a high potential impact due to possible SSRF and credential leakage. Though axios is a critical library for web development, its direct business relevance may vary depending on the specific use case within an organization. The CVSS score of 7.7 highlights a significant security risk; however, the very low EPSS score (0.00074) indicates minimal likelihood of exploitation in the wild. Asset exposure is noted as 'None', meaning that a specific use case would determine reachability. The priority is set to Medium, balancing the severe impact with the relatively modest likelihood of exploitation and varying business relevance."
+  },
+  {
+    "cve_id": "CVE-2024-45590_GHSA-qwcr-r2fm-qrc7",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability in the body-parser package is a denial of service (DoS), which is a medium impact threat. While the CVSS score is moderately high at 7.5, the EPSS score is very low, indicating a low likelihood of exploitation in the wild. The reachability is concerning since the middleware could be exposed to user input via web servers or APIs. The business relevance is medium as body-parser is a common module in Node.js applications, potentially affecting many web services. Patching to version 1.20.3 mitigates this vulnerability."
+  },
+  {
+    "cve_id": "CVE-2024-47764_GHSA-pxg6-pf52-xh8x",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Is it likely exposed to users",
+    "business_relevance": "Low",
+    "priority": "Medium",
+    "justification": "The vulnerability allows for cookie manipulation, which could lead to session hijacking or unauthorized access. Exploitability is medium given the nature of altering cookie attributes, but it requires some level of attack sophistication. The impact is medium as it could compromise user sessions or application integrity. Reachability is exposed to users because cookies are a core part of client-server communication. However, the specific library is a basic cookie parser/serializer, indicating low business relevance unless it's part of a critical system. The CVSS score indicates a moderate level of concern, and the EPSS score is very low, suggesting a lesser likelihood of exploitation in the wild. Priority is set to Medium due to potential impacts on user security and the need to ensure proper updates are applied."
+  },
+  {
+    "cve_id": "CVE-2024-21538_GHSA-3xgq-45jj-v275",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Internal only",
+    "business_relevance": "Low",
+    "priority": "Medium",
+    "justification": "The Regular Expression Denial of Service (ReDoS) vulnerability in versions of the package cross-spawn before 7.0.5 has a CVSS score of 7.5, indicating a medium severity level. The exploitability is medium because an attacker needs to craft a specific input string to exploit the vulnerability. The impact is considered medium as it can increase CPU usage and potentially lead to a denial of service by crashing the program, but it does not compromise confidentiality or integrity. The reachability is internal only since 'Asset Exposure' is marked as none, suggesting it is not directly exposed to users. The business relevance is low because cross-spawn is generally a lower-criticality package used in development and scripting environments, rather than a critical business system. Given these factors, the overall priority is medium, implying that while it should be addressed, it is not an immediate emergency."
+  },
+  {
+    "cve_id": "CVE-2024-29041_GHSA-rv95-896h-c2vc",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "High",
+    "priority": "Medium",
+    "justification": "The CVE details an open redirect vulnerability in Express.js, which is a widely used web framework for Node.js applications. The exploitability is deemed medium because the vulnerability requires user interaction, specifically using user-provided URLs in redirects, which limits automated exploitation. The impact is medium as open redirects can lead to phishing attacks by diverting users to malicious sites, although it doesn't directly compromise data integrity or confidentiality. Reachability is likely exposed to users since Express.js is often used for web applications where user-provided URLs might be processed. Business relevance is high as Express.js is critical for many web applications, making this vulnerability significant for businesses relying on this framework for web services. Despite the CVSS score of 6.1 and low EPSS score, the vulnerability's potential implications for user trust and business operations justify a medium priority for addressing it, especially given its possible exploitation in phishing and social engineering attacks."
+  },
+  {
+    "cve_id": "CVE-2024-43796_GHSA-qw6h-vgh9-j6wx",
+    "exploitability": "Medium",
+    "impact": "High",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "High",
+    "justification": "The vulnerability affects Express.js, a widely-used web framework, potentially allowing remote code execution if untrusted input is passed to response.redirect(), even after sanitation. Despite a CVSS of 5 and low EPSS score, the potential impact (execution of untrusted code) raises the impact and priority. Express.js is critical to web applications, affecting overall business operation. Patch exists in version 4.20.0, so it's essential to prioritize the update to mitigate risks associated with public-facing web applications."
+  },
+  {
+    "cve_id": "CVE-2023-26159_GHSA-jchw-25xp-jwwc",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Low",
+    "priority": "Medium",
+    "justification": "The vulnerability exists in the 'follow-redirects' package which is often used in applications for handling URL redirects. The improper input validation allows attackers to manipulate URL parsing, potentially leading to redirection to malicious sites. This can cause information disclosure and support phishing attacks, with a CVSS score of 6.1 indicating a moderate impact. Despite the low EPSS score and asset exposure, the reachability is concerning since URL parsing is a common front-facing function in web applications which are exposed to users. The business relevance is determined to be low as 'follow-redirects' itself isn't critical to business operations, but the potential for user exposure requires attention and mitigation to prevent exploitation."
+  },
+  {
+    "cve_id": "CVE-2024-28849_GHSA-cxjh-pqwp-8mfp",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability in follow-redirects, which is an open source module used for handling HTTP and HTTPS requests, presents a medium exploitability due to the unnecessary exposure of proxy credentials during cross-domain redirects. This can potentially lead to credential leaks. The impact is deemed medium as it affects authentication headers, posing a risk to security. Its reachability is likely exposed to users, especially those utilizing the module for HTTP requests in web applications. Although the product itself may not be mission-critical for every business, its use in Node projects gives it medium relevance. Considering the CVSS score of 6.5 and the low EPSS score, the priority to address this issue is medium, advising users to upgrade to the fixed version 1.15.6 to prevent credential leaks."
+  },
+  {
+    "cve_id": "CVE-2024-21536_GHSA-c7qv-q95q-8v27",
+    "exploitability": "Medium",
+    "impact": "High",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability (Denial of Service) in the http-proxy-middleware package can cause severe disruption by crashing the server, which leads to a high impact. The exploitability is set to medium, considering the vulnerability requires specific request paths to trigger but remains an accessible vector in a proxy environment. Given its application in web services, reachability is likely exposed to users, especially in environments where Node.js is used for server-side operations. The business relevance is medium due to the nature of the affected middleware component, which might not be core to all business operations. Despite a low EPSS score indicating a lower likelihood of widespread exploitation in the wild, the nature of the impact necessitates a medium priority for remediation."
+  },
+  {
+    "cve_id": "CVE-2025-32996_GHSA-4www-5p9h-95mh",
+    "exploitability": "Low",
+    "impact": "Low",
+    "reachability": "Internal",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The vulnerability affects http-proxy-middleware, a module that typically is part of a server-side application. The CVSS score of 4 indicates a low to moderate severity. The EPSS score is extremely low, suggesting a very low probability of exploitation. The asset exposure is marked as none, indicating minimal direct exposure. Given these factors, the exploitability and impact are considered low, making the overall priority for mitigation low. The vulnerability likely does not have direct access to end-users and is more internal in nature. Additionally, not being part of core applications for most systems results in low business relevance."
+  },
+  {
+    "cve_id": "CVE-2025-32997_GHSA-9gqv-wp59-fq42",
+    "exploitability": "Low",
+    "impact": "Low",
+    "reachability": "Internal only",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The CVSS score of 4 indicates a relatively low risk, and the EPSS score of 0.00038 suggests a very low likelihood of exploitation. The vulnerability occurs in a middleware component, which is typically not directly exposed to users and is more likely to be part of the internal infrastructure. Without additional context indicating widespread use or exposure, the business relevance is also low. Taken together, these factors lead to a low prioritization for addressing this issue."
+  },
+  {
+    "cve_id": "CVE-2024-4067_GHSA-952p-6rrq-rcjv",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Internal only",
+    "business_relevance": "Low",
+    "priority": "Medium",
+    "justification": "The vulnerability in the `micromatch` package leads to a potential Regular Expression Denial of Service (ReDoS) issue, which could be exploited by specially crafted input. The exploitability is deemed Medium as successful exploitation requires an intentionally crafted payload targeting the affected `braces()` function. The impact is considered Medium since a successful attack can degrade the performance of an application, causing it to hang or slow down significantly, but it does not lead to data extraction or privileged escalation. The reachability is 'Internal only' as the exposure noted is 'None', suggesting this is likely a server-side issue rather than a client-facing one. The business relevance is Low given that `micromatch` is a utility library often used in development environments rather than core business operations, minimizing potential business impact. Based on these assessments, the priority is Medium, as the vulnerability could lead to service availability issues that may affect productivity, particularly in systems processing user-provided data where this package is used."
+  },
+  {
+    "cve_id": "CVE-2024-55565_GHSA-mwcw-c2x4-8c55",
+    "exploitability": "Low",
+    "impact": "Low",
+    "reachability": "Internal only",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The CVE involves a library (Nano ID) typically used for generating random ASCII strings in software applications. The vulnerability stems from mishandling non-integer values, but given the CVSS score of 4.3 and an extremely low EPSS score of 0.0001, it is considered low risk for exploitation. The lack of asset exposure further reaffirms its internal reach. Moreover, Nano ID is not a critical business application, making the business relevance low. Hence, the priority for addressing this vulnerability is low."
+  },
+  {
+    "cve_id": "CVE-2024-45296_GHSA-9wv6-86v2-598j",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability CVE-2024-45296_GHSA-9wv6-86v2-598j has a CVSS score of 7.5, indicating a relatively high potential for impact on system performance. The exploitability is deemed Medium since triggering the issue requires specific conditions (two parameters separated by a non-period character), but it can still be exploited to cause a denial-of-service (DoS) attack. The impact is Medium due to the potential to block the event loop in JavaScript applications, affecting service availability. Reachability is classified as likely exposed to users if the affected code is part of front-facing applications using path-to-regexp for routing. Business relevance is considered Medium, as path-to-regexp is a widely used library in web applications, potentially affecting many services. Based on the overall analysis, the recommended priority for this vulnerability is Medium, considering the required conditions for exploitation and its impact on business operations."
+  },
+  {
+    "cve_id": "CVE-2024-52798_GHSA-rhx6-c78j-4q9w",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Internal Only",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The vulnerability described involves path-to-regexp, a library used for converting path strings into regular expressions. The potential issue here is related to a performance degradation due to poorly optimized regular expressions that are susceptible to backtracking. Although the CVSS score is relatively high at 7.7, indicating potential concern, several factors suggest a lower priority. The EPSS (Exploit Prediction Scoring System) score is extremely low at 0.00032, indicating a very low likelihood of exploitation. Additionally, the vulnerability affects performance rather than security directly, thus having a medium impact overall. Considering reachability, the use of path-to-regexp is typically internal within server-side applications, reducing its exposure level. The business relevance is low as path-to-regexp is not a widely critical application but rather a utility library used in specific technical contexts. Overall, the recommendation is a low priority for this vulnerability, with a focus on maintaining updates and patches to the library."
+  },
+  {
+    "cve_id": "CVE-2023-44270_GHSA-7fh5-64p2-3v2j",
+    "exploitability": "Low",
+    "impact": "Medium",
+    "reachability": "Internal only",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The vulnerability in PostCSS primarily affects linters that process external untrusted CSS, but the CVSS score of 5.3 indicates a moderate impact on confidentiality or integrity. Given the specificity of the threat environment—targeting the behavior of CSS comments—it is less likely to be exploited in typical environments, as demonstrated by the low EPSS score of 0.00109. Moreover, PostCSS is often used in development contexts and may not directly affect business-critical applications, judging by the 'internal only' reachability and the general low business relevance of CSS processing libraries compared to other core systems or processes. Therefore, the priority for addressing this is considered 'Low,' as the potential exploitability and impact do not present a significant risk to typical operational contexts."
+  },
+  {
+    "cve_id": "CVE-2024-47068_GHSA-gcx4-mw62-g8wm",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability affects versions of Rollup prior to 2.79.2, 3.29.5, and 4.22.4. Rollup is a widely used JavaScript bundler, which suggests medium business relevance due to the potential number of implementations in active use, even though its criticality might not be as high as server-side products. The exploitability is medium due to the nature of DOM Clobbering potentially leading to XSS attacks when attacker-controlled HTML elements are present. Impact is also rated medium since XSS can be serious but typically affects client-side code execution without immediate server-side compromise. Given these assessments and the low EPSS score suggesting limited exploit applicability, the priority remains medium."
+  },
+  {
+    "cve_id": "CVE-2024-43799_GHSA-m6fv-jmcg-4jfg",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Is it likely exposed to users or internal only?",
+    "business_relevance": "Low",
+    "priority": "Low",
+    "justification": "The vulnerability affects the 'Send' library, which is used for streaming files as HTTP responses. While user input is handled and there's potential for code execution, the overall CVSS score is moderate (5), suggesting a balanced level of exploitability and impact without severe consequences. The EPSS score is extremely low (0.00025), indicating minimal likelihood of exploitation in the wild. As there is no direct asset exposure mentioned, its reachability might be limited unless integrated into exposed web services. Furthermore, the 'Send' library may not be a critical part of most business systems, reducing its business relevance. Given these factors, the priority for addressing this vulnerability can be considered low."
+  },
+  {
+    "cve_id": "CVE-2024-11831_GHSA-76p7-773f-r4q5",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability in npm-serialize-javascript involves improper input sanitization that can lead to XSS attacks, a well-known security threat, which has moderate exploitability due to its reliance on serialized data being sent to the web client. While the CVSS score is 5.4, indicating moderate severity, the EPSS score suggests a low probability of exploitation. The vulnerability is relevant primarily where the library is used in web applications that expose serialized data to clients, making it significant for businesses involved in web development using this package. Given these factors, the recommended priority is Medium to ensure necessary mitigations are implemented in potentially vulnerable environments."
+  },
+  {
+    "cve_id": "CVE-2024-43800_GHSA-cm22-4g7w-348p",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely Exposed to Users",
+    "business_relevance": "Low",
+    "priority": "Medium",
+    "justification": "The vulnerability in serve-static involves passing untrusted user input to a redirect function, which could potentially lead to executing untrusted code. The exploitability is considered medium since the vulnerability arises from external input processing, but there is evidence that the impact is mitigated by the nature of the vulnerability (non-critical function or rare execution path). The impact is assessed as medium because exploitation could lead to code execution, although specifics on the execution path are unspecified. Reachability is likely exposed to users as serve-static inherently serves files from a server to a client, making user interaction regular and expected. However, the business relevance is low because serve-static is typically used for serving static assets and is not considered a critical business system. Therefore, despite the medium nature of the exploitability and impact, the low business relevance suggests a medium priority for fixing the issue."
+  },
+  {
+    "cve_id": "CVE-2024-12905_GHSA-pq67-2wwv-3xjx",
+    "exploitability": "Medium",
+    "impact": "High",
+    "reachability": "Internal only",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The CVE involves an improper link resolution and path traversal vulnerability in the tar-fs package. The exploitability is rated as Medium due to the requirement for a maliciously crafted tar file to exploit the issue. Its impact is considered High because it can result in unauthorized file writes or overwrites outside the intended extraction directory, potentially leading to data compromise or disruption. Reachability is classified as 'Internal only' since it typically requires internal access to systems handling tar file extractions. Business relevance is Medium given that tar-fs is a specific package, and its criticality may vary depending on the usage within an organization. The overall priority is set to Medium, as the vulnerability could have serious consequences but relies on specific conditions to be exploited."
+  },
+  {
+    "cve_id": "CVE-2023-45818_GHSA-v65r-p3vv-jjfv",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Is it likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The CVE describes a mutation cross-site scripting (mXSS) vulnerability in TinyMCE, which is a widely used open-source rich text editor. The exploitability is rated Medium because the vulnerability can be triggered under specific conditions where carefully-crafted HTML passes the XSS sanitisation layer. The impact is Medium since it can potentially execute malicious scripts but requires specific user action or crafted inputs. The reachability is considered 'likely exposed to users' because TinyMCE is embedded in web applications, making end-users potentially interact with its functionality. The business relevance is Medium, as TinyMCE is important in web content management systems, but the exploit does not compromise the entire application or system. Considering these factors, particularly the Medium impact and exploitability, the overall priority is Medium. It's recommended to upgrade to the patched version to mitigate this vulnerability effectively."
+  },
+  {
+    "cve_id": "CVE-2023-45819_GHSA-hgqx-r2hp-jr38",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Internal only",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability is a cross-site scripting (XSS) issue within TinyMCE's Notification Manager API, which requires specific conditions (inserting crafted malicious content and triggering a notification) to be exploited. The overall exploitability is medium due to these prerequisites. Impact is medium because it allows arbitrary JavaScript execution, which could be harmful but requires those specific conditions. The reachability is internal since it affects TinyMCE's notification system used by an active user within an application. The business relevance is medium as TinyMCE is often used as a component of larger applications, thus affecting the application's interfaces involving rich text editing. The priority is medium due to the potential impact on user sessions, the requirement to upgrade to remediate, and the lack of known workarounds."
+  },
+  {
+    "cve_id": "CVE-2023-48219_GHSA-v626-r774-j7f8",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "High",
+    "priority": "Medium",
+    "justification": "The vulnerability affects TinyMCE, a widely used open source rich text editor, making it highly relevant for businesses that incorporate rich text editing capabilities in their web applications. The exploitability is assessed as Medium, given the vulnerability requires certain conditions to be met for successful exploitation (mutation XSS via specific text node patterns). The impact is Medium, as XSS can lead to data theft, session hijacking, and more, but it's not directly leading to full system compromise. TinyMCE is frequently exposed to end users, especially in content management systems and web applications. A Medium priority is recommended because the vulnerability is patched and has a relatively low EPSS score, suggesting lower likelihood of exploitation in the wild. However, vigilance and timely updates are advised to ensure security."
+  },
+  {
+    "cve_id": "CVE-2024-29203_GHSA-438c-3975-5x3f",
+    "exploitability": "Low",
+    "impact": "Low",
+    "reachability": "Internal only",
+    "business_relevance": "Medium",
+    "priority": "Low",
+    "justification": "The vulnerability is an XSS issue, which typically requires user interaction for exploitation and hence has low exploitability. The impact is limited due to same-origin protections restricting permissions of `iframe` elements. The reachability is classified as 'Internal only' since TinyMCE is most commonly used within web applications' internal environments or by authenticated users rather than being directly exposed to external users. Business relevance is assessed as 'Medium' due to TinyMCE's widespread use in web applications, potentially affecting businesses that rely on it for text editing functionality. However, given the low CVSS score and minimal EPSS score indicating a low likelihood of exploitation, the overall priority for addressing this vulnerability is 'Low'."
+  },
+  {
+    "cve_id": "CVE-2024-29881_GHSA-5359-pvf2-pw78",
+    "exploitability": "Low",
+    "impact": "Medium",
+    "reachability": "Is it likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Low",
+    "justification": "The vulnerability involves a cross-site scripting (XSS) issue via SVG images in TinyMCE, an open-source text editor. Due to the CVSS score of 4.3 and a very low EPSS score of 0.00191, the exploitability is low as it requires specific conditions to execute. The impact is considered medium because XSS can potentially lead to user data exposure or compromise, but likely not immediate critical damage without further chaining or context. The reachability is deemed likely exposed to users since TinyMCE is often used in web applications where users interact with the editor directly. Business relevance is medium given TinyMCE's widespread use, impacting web applications that employ the editor for user content input. Given the low exploitability, medium impact, potential exposure to end-users, and medium business relevance, the recommended priority is low, especially if the applications using TinyMCE can be rapidly updated to versions 6.8.1 or 7.0.0 where the issue is patched."
+  },
+  {
+    "cve_id": "CVE-2024-38356_GHSA-9hcv-j9pv-qmph",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Is it likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability is a cross-site scripting (XSS) issue in TinyMCE, a widely used rich text editor. Exploitability is rated as Medium due to the need for user interaction or specific configurations to be vulnerable. Impact is Medium because executing script code could lead to various security compromises, depending on the context. Reachability is deemed as 'Is it likely exposed to users' because TinyMCE is often embedded in web applications accessible by external users. Business relevance is Medium because while TinyMCE is widely used, it may not be business-critical depending on the application context. The CVSS score reflects a medium severity, and the priority is set to Medium, as users should upgrade affected TinyMCE versions promptly but it may not be an immediate emergency unless it's heavily relied upon in their web infrastructure."
+  },
+  {
+    "cve_id": "CVE-2024-38357_GHSA-w9jx-4g6g-rp7x",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The CVE describes a cross-site scripting (XSS) vulnerability in TinyMCE, a widely used open source rich text editor. The exploitability is assessed as Medium because XSS vulnerabilities require some level of user interaction or specific conditions for exploitation, such as a user loading crafted content. The impact is Medium since XSS can allow attackers to execute arbitrary scripts in the context of the user, potentially leading to data exposure or credential theft. Reachability is assessed as Likely exposed to users because TinyMCE is often integrated into web applications, making it accessible to both users and potentially external attackers. Business relevance is Medium since TinyMCE is commonly employed in content management systems and web applications, and vulnerabilities here could impact data integrity and user trust. The CVSS score of 6.1 indicates a moderate severity. Combining these factors, the Priority is determined to be Medium, encouraging timely patching given the potential impact on applications using this editor."
+  },
+  {
+    "cve_id": "CVE-2024-43788_GHSA-4vvj-4cpr-p986",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely Exposed to Users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability is associated with a DOM Clobbering mechanism that can lead to XSS attacks through a widely-used module bundler Webpack, affecting web pages that include Webpack-generated files and permitting scriptless HTML with unsanitized attributes. Given that it impacts users and sites indirectly relying on Webpack, it has medium exploitability and impact. While there are no apparent workarounds, the fix is available in a newer version. The EPSS score is low, suggesting limited exploitation in the wild. Lastly, being a prevalent tool in modern web development gives it medium business relevance, though many businesses should prioritize depending on their direct dependency on Webpack."
+  },
+  {
+    "cve_id": "CVE-2024-37890_GHSA-3h5v-q93c-6h6q",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability can cause a denial of service via an excessive number of headers, but it's not highly exploitable since it requires a specific configuration or unusual client requests. The impact is limited to crashing the server, which can disrupt operations but doesn't lead to data theft or corruption. The ws library is commonly used for WebSocket applications, making it likely exposed to users rather than just internal use. Business relevance is medium due to the widespread use of WebSocket applications; however, it's not critical as it doesn't affect core data processing or storage systems. While the CVSS score is moderately high, the low EPSS score indicates that exploitation in the wild is unlikely, justifying a medium priority for applying the fix."
+  },
+  {
+    "cve_id": "CVE-2023-30533_GHSA-4r6h-8v6p-xvw6",
+    "exploitability": "Medium",
+    "impact": "High",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The vulnerability in SheetJS Community Edition involves prototype pollution, which can lead to significant application security risks, hence the high impact rating. Exploitability is medium due to the technical nature of exploiting prototype pollution vulnerabilities, which typically require a certain level of expertise or specific crafted input. Reachability is user-exposed because SheetJS is used for parsing and manipulating Excel files, indicating it operates on user-provided data. Business relevance is medium as SheetJS, while popular, may not be critical to all business operations. The provided CVSS score of 7.8 reflects a severe vulnerability; however, the low EPSS score suggests low likelihood of exploitation in the wild, which aligns with a medium priority for patching and remediation efforts."
+  },
+  {
+    "cve_id": "CVE-2024-22363_GHSA-5pgg-2g8v-p4x9",
+    "exploitability": "Medium",
+    "impact": "Medium",
+    "reachability": "Likely exposed to users",
+    "business_relevance": "Medium",
+    "priority": "Medium",
+    "justification": "The CVE affects the SheetJS Community Edition before version 0.20.2 with a vulnerability to Regular Expression Denial of Service (ReDoS). The CVSS score of 7.5 indicates a significant severity, suggesting potential for widespread impact, although the EPSS score (0.00063) implies a low likelihood of exploitation. The product 'xlsx' is commonly used for spreadsheet manipulation, implying moderate business relevance, especially if it is integral to data handling within the organization. Nonetheless, the absence of specific asset exposure mitigates the risk slightly, warranting a Medium priority for patching or mitigation."
+  }
+]
